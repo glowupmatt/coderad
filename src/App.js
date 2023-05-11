@@ -1,24 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/App.css";
+import "./styles/default.css";
+import "./styles/styles.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <div className="header-container">
+        <nav className="navbar nav">
+          <div className="container">
+            <button
+              className="navbar-toggler"
+              aria-expanded="false"
+              aria-controls="navbarDropdown"
+            >
+              <span>&#9776;</span>
+            </button>
+            <a className="navbar-brand" href="">
+              CodeRAD
+            </a>
+            <ul className="navbar-nav">
+              <li className="nav-link">
+                <a href="#">Home</a>
+              </li>
+              <li className="nav-link">
+                <a href="#">Blog</a>
+              </li>
+              <li className="nav-link">
+                <a href="#">Portfolio</a>
+              </li>
+              <li className="nav-link">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <header className="bg-header">
+          <div className="container">
+            <div>
+              <h2 className="hero-header">
+                Young in our spirits and <br /> modern look.
+              </h2>
+              <a className="btn btn-white" href="#">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </header>
+      </div>
+    </body>
   );
 }
 
